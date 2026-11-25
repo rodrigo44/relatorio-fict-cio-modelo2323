@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Relatório Fictício de Inteligência e Due Diligence — Modelo de Apresentação</title>
+<style>
+:root{
+  --paper:#fbfaf6;
+  --bg:#e9e6df;
+  --ink:#1d232b;
+  --mut:#5d6672;
+  --line:#cfcac0;
+  --navy:#1f3347;
+  --red:#a4312c;
+  --redbg:#f6e7e5;
+  --amb:#9a6a12;
+  --ambbg:#f7efdc;
+  --grn:#1e5c3a;
+  --grnbg:#e6f2ec;
+  --gry:#475569;
+  --grybg:#eef2f6;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Georgia,"Times New Roman",serif}
+.page{width:210mm;min-height:297mm;margin:16px auto;background:var(--paper);padding:18mm 20mm 16mm 22mm;position:relative;box-shadow:0 2px 10px rgba(0,0,0,.15);overflow:hidden}
+.wm{position:absolute;left:4.5mm;top:50%;transform:translateY(-50%) rotate(-90deg);transform-origin:center center;font:9px/1 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:rgba(93,102,114,.38);white-space:nowrap;pointer-events:none;z-index:2}
+.hd{display:flex;justify-content:space-between;font:11px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:20px}
+.ft{position:absolute;left:22mm;right:20mm;bottom:9mm;font:10px Arial,sans-serif;color:var(--mut);display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:6px}
+h1{font-size:25px;line-height:1.2;margin:0 0 4px;color:var(--navy)}
+.sub{font:13px Arial,sans-serif;color:var(--mut);margin-bottom:14px}
+h2{font:700 13.5px Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);border-bottom:2px solid var(--navy);padding-bottom:5px;margin:0 0 14px}
+.s{margin-bottom:28px}
+p{margin:0 0 11px}
+h3{font:700 13px Arial,sans-serif;margin:18px 0 8px;color:var(--navy)}
+.meta{width:100%;border-collapse:collapse;font:12.5px Arial,sans-serif;margin-bottom:14px}
+.meta td{border:1px solid var(--line);padding:7px 10px;vertical-align:top}
+.meta td:first-child{background:#f1eee6;width:28%;font-weight:700;color:var(--mut)}
+.sum{border:1px solid var(--navy);padding:12px 16px;margin:10px 0 14px;background:#fff}
+.sum b.t{display:block;font:700 12px Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);margin-bottom:6px}
+.sum p{margin:0 0 8px;text-align:justify}
+.verd{display:flex;gap:14px;align-items:center;border:1.5px solid var(--red);background:var(--redbg);padding:10px 14px;margin:10px 0 16px;font:13px Arial,sans-serif}
+.verd .n{font:700 32px Georgia,serif;color:var(--red);line-height:1}
+.verd b{color:var(--red)}
+table.t{width:100%;border-collapse:collapse;font:12px Arial,sans-serif;margin:8px 0 14px}
+table.t th{background:var(--navy);color:#fff;text-align:left;padding:6px 8px;font-weight:700}
+table.t td{border-bottom:1px solid var(--line);padding:8px;vertical-align:top}
+.badge{display:inline-block;padding:2px 7px;border-radius:3px;font:700 10px Arial,sans-serif;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.b-ok{background:var(--grnbg);color:var(--grn);border:1px solid #b8d8c7}
+.b-ind{background:var(--ambbg);color:var(--amb);border:1px solid #e5cfa3}
+.b-inc{background:var(--redbg);color:var(--red);border:1px solid #e4b7b4}
+.b-nl{background:var(--grybg);color:var(--gry);border:1px solid #cbd5e1}
+.note{border-left:4px solid var(--amb);background:var(--ambbg);padding:10px 14px;font:12.5px Arial,sans-serif;margin:14px 0}
+.alert{border-left:4px solid var(--red);background:var(--redbg);padding:10px 14px;font:12.5px Arial,sans-serif;margin:14px 0}
+.rev{border:1px solid var(--navy);background:#f4f6f9;padding:12px 15px;font:12.5px Arial,sans-serif;margin:14px 0}
+.rev b.rt{display:block;color:var(--navy);text-transform:uppercase;letter-spacing:.05em;font-size:11.5px;margin-bottom:6px}
+.rev ul{margin:4px 0 0;padding-left:18px}
+.rev li{margin-bottom:5px}
+ol.tl{list-style:none;margin:8px 0;padding:0;border-left:2px solid var(--line)}
+ol.tl li{padding:0 0 14px 16px;position:relative;font-size:13.5px}
+ol.tl li:before{content:"";position:absolute;left:-6px;top:6px;width:10px;height:10px;background:var(--navy);border-radius:50%}
+ol.tl li.x:before{background:var(--red)}
+ol.tl b{font:700 11.5px Arial,sans-serif;color:var(--navy);display:block}
+.fig{border:1px solid var(--line);background:#fff;padding:10px;margin:14px 0;text-align:center}
+.fig .cap{font:11.5px Arial,sans-serif;color:var(--mut);margin-top:6px}
+.ev{font:12px Arial,sans-serif;width:100%;border-collapse:collapse}
+.ev td{border-bottom:1px solid var(--line);padding:8px 6px;vertical-align:top}
+.ev td:first-child{width:95px;white-space:nowrap;font-weight:700;color:var(--navy)}
+.sig{margin-top:28px;padding-top:12px;border-top:1px solid var(--line);font:12.5px Arial,sans-serif;color:var(--mut)}
+.sig b.nome{display:block;font:700 18px Georgia,serif;color:var(--navy);font-style:italic;margin-bottom:2px}
+.sig span.cargo{display:block;font:700 12.5px Arial,sans-serif;color:var(--ink)}
+.legal{font:11.5px Arial,sans-serif;color:var(--mut);margin-top:14px;border-top:1px solid var(--line);padding-top:8px}
+@media print{
+  body{background:#fff}
+  .page{margin:0;box-shadow:none;page-break-after:always}
+}
+@media(max-width:800px){
+  .page{width:auto;min-height:0;margin:0;padding:18px 16px 50px 28px}
+  .ft{position:static;margin-top:20px}
+}
+</style>
+</head>
+<body>
+
+<!-- PÁGINA 1 -->
+<section class="page">
+  <div class="wm">RELATÓRIO FICTÍCIO · REF. MOD-SF-001 · PRODUZIDO POR SIGILO FORENSE</div>
+  <div class="hd">
+    <span>Relatório Fictício · Modelo de Apresentação</span>
+    <span>Demonstração · Dados Simulados</span>
+  </div>
+  <h1>Relatório Fictício de Inteligência e Due Diligence</h1>
+  <div class="sub">Modelo demonstrativo de análise societária, fiscal, judicial e digital · Alvo fictício: Lucas Henrique Mendes</div>
+
+  <div class="sum">
+    <b class="t">Síntese Executiva (Cenário Demonstrativo)</b>
+    <p><b>Escopo do Modelo.</b> Simulação de levantamento de inteligência em fontes abertas sobre o alvo fictício <b>Lucas Henrique Mendes</b> (CPF fictício <code>000.000.000-00</code>) e entidades simuladas correlatas, com destaque para <b>Vértice Assessoria Empresarial Ltda</b>, <b>Horizon Participações S/A</b> e a sociedade fictícia no exterior <b>Meridian Global Holdings Ltd</b>.</p>
+    <p><b>Panorama Simulado.</b> O cenário ilustrativo reúne ação civil/processual simulada com pretensão indenizatória de R$ 1.250.000,00, débitos fiscais simulados em dívida ativa nas pessoas jurídicas demonstrativas e inatividade do domínio fictício <code>vertice-exemplo.com</code>, preservando registros históricos de hospedagem e perfil público ilustrativo.</p>
+    <p><b>Finalidade da Peça.</b> Apresentar a clientes e parceiros a estrutura, o rigor de classificação por score e a auditoria interna adotados nas entregas, sem expor dados reais de terceiros.</p>
+  </div>
+
+  <div class="verd">
+    <div class="n">!</div>
+    <div>
+      <b>CENÁRIO ILUSTRATIVO DE RISCO ELEVADO (MODELO FICTÍCIO)</b><br>
+      Demonstração de como o relatório consolida litígios, passivos fiscais, ramificações societárias e alterações de infraestrutura digital.
+    </div>
+  </div>
+
+  <table class="meta">
+    <tr><td>Tipo de Documento</td><td>Relatório Fictício de apresentação metodológica (due diligence e inteligência digital)</td></tr>
+    <tr><td>Alvo Fictício</td><td>Lucas Henrique Mendes · CPF <code>000.000.000-00</code> · Handle simulado: <code>lh_mendes_demo</code></td></tr>
+    <tr><td>Entidades Fictícias</td><td>Vértice Assessoria Empresarial Ltda (CNPJ <code>00.111.222/0001-33</code>) · Horizon Participações S/A (CNPJ <code>00.444.555/0001-66</code>) · Meridian Global Holdings Ltd</td></tr>
+    <tr><td>Endereço Fictício</td><td>Rua das Acácias, 120 — Sala 402, Bairro Centro, Cidade Modelo/UF</td></tr>
+    <tr><td>Data do Modelo</td><td>25 de novembro de 2026 · Referência MOD-SF-001</td></tr>
+  </table>
+
+  <h3>Legenda de Classificação por Score</h3>
+  <table class="t">
+    <tr><th style="width:170px">Classificação</th><th>Critério Analítico Aplicado</th></tr>
+    <tr><td><span class="badge b-ok">Fato Confirmado</span></td><td>Informação ou vínculo validado diretamente em registro público, base oficial ou evidência aberta convergente.</td></tr>
+    <tr><td><span class="badge b-ind">Indício</span></td><td>Apontamento relevante que sugere conexão, estrutura ou atuação, mas que exige validação documental complementar.</td></tr>
+    <tr><td><span class="badge b-inc">Inconsistência</span></td><td>Divergência, descontinuidade operacional ou conflito entre o discurso institucional e o estado técnico/cadastral apurado.</td></tr>
+    <tr><td><span class="badge b-nl">Não Localizado</span></td><td>Consulta realizada em fonte aberta sem retorno ativo ou registro disponível até a data de fechamento.</td></tr>
+  </table>
+
+  <div class="ft">
+    <span>Relatório Fictício · Modelo de Apresentação</span>
+    <span>Pág. 1 de 6</span>
+  </div>
+</section>
+
+<!-- PÁGINA 2 -->
+<section class="page">
+  <div class="wm">RELATÓRIO FICTÍCIO · REF. MOD-SF-001 · PRODUZIDO POR SIGILO FORENSE</div>
+  <div class="hd">
+    <span>Relatório Fictício · Modelo de Apresentação</span>
+    <span>Seção 1</span>
+  </div>
+
+  <div class="s">
+    <h2>1. Panorama Judicial e Passivos Fiscais (Dados Simulados)</h2>
+    <p>Nesta seção ilustrativa, o modelo organiza demandas judiciais, medidas patrimoniais e inscrições em dívida ativa associadas ao cenário simulado.</p>
+
+    <table class="t">
+      <tr>
+        <th style="width:24%">Eixo / Registro</th>
+        <th style="width:54%">Detalhamento Simulado</th>
+        <th style="width:22%">Score</th>
+      </tr>
+      <tr>
+        <td><b>Ação Judicial (Fictícia)</b></td>
+        <td>Processo ilustrativo nº <code>0000000-00.2026.4.00.0000</code> envolvendo cobrança/indenização simulada de <b>R$ 1.250.000,00</b> e pedido de constrição patrimonial.</td>
+        <td><span class="badge b-ok">Fato Confirmado</span></td>
+      </tr>
+      <tr>
+        <td><b>Recurso / Incidente (Fictício)</b></td>
+        <td>Registro ilustrativo de agravo/incidente processual com decisão monocrática publicada em <b>15/04/2026</b>.</td>
+        <td><span class="badge b-ok">Fato Confirmado</span></td>
+      </tr>
+      <tr>
+        <td><b>Passivo Fiscal · Vértice Ltda</b></td>
+        <td><b>Vértice Assessoria Empresarial Ltda</b> (CNPJ fictício <code>00.111.222/0001-33</code>) exibida no cenário com débito simulado de <b>R$ 185.400,00</b> em dívida ativa.</td>
+        <td><span class="badge b-ok">Fato Confirmado</span></td>
+      </tr>
+      <tr>
+        <td><b>Passivo Fiscal · Horizon S/A</b></td>
+        <td><b>Horizon Participações S/A</b> (CNPJ fictício <code>00.444.555/0001-66</code>) exibida no cenário com débito simulado de <b>R$ 14.250,00</b> em dívida ativa.</td>
+        <td><span class="badge b-ok">Fato Confirmado</span></td>
+      </tr>
+      <tr>
+        <td><b>Bens em Outra Praça</b></td>
+        <td>Menção simulada a imóveis ou cotas em jurisdição distinta, sem matrícula ou certidão juntada no cenário demonstrativo.</td>
+        <td><span class="badge b-ind">Indício</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="ft">
+    <span>Relatório Fictício · Modelo de Apresentação</span>
+    <span>Pág. 2 de 6</span>
+  </div>
+</section>
+
+<!-- PÁGINA 3 -->
+<section class="page">
+  <div class="wm">RELATÓRIO FICTÍCIO · REF. MOD-SF-001 · PRODUZIDO POR SIGILO FORENSE</div>
+  <div class="hd">
+    <span>Relatório Fictício · Modelo de Apresentação</span>
+    <span>Seção 2</span>
+  </div>
+
+  <div class="s">
+    <h2>2. Estrutura Societária e Rede de Vínculos (Dados Simulados)</h2>
+    <p>O modelo demonstra como relações societárias, endereços declarados e figuras de representação são representadas graficamente e avaliadas por nível de consistência.</p>
+
+    <div class="fig">
+      <svg viewBox="0 0 680 300" width="100%" style="max-width:640px" font-family="Arial,sans-serif">
+        <defs>
+          <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5"/>
+          </marker>
+        </defs>
+        <ellipse cx="340" cy="148" rx="96" ry="34" fill="#1f3347"/>
+        <text x="340" y="144" text-anchor="middle" font-size="11.5" fill="#fff" font-weight="700">Lucas Henrique Mendes</text>
+        <text x="340" y="160" text-anchor="middle" font-size="9.5" fill="#cfd8e0">Alvo Fictício · Cidade Modelo/UF</text>
+
+        <line x1="252" y1="132" x2="188" y2="88" stroke="#a4312c" stroke-width="1.6" marker-end="url(#arr)"/>
+        <ellipse cx="136" cy="66" rx="92" ry="30" fill="#f6e7e5" stroke="#a4312c" stroke-width="1.5"/>
+        <text x="136" y="63" text-anchor="middle" font-size="10.5" font-weight="700" fill="#a4312c">Vértice Ltda (Fictícia)</text>
+        <text x="136" y="77" text-anchor="middle" font-size="9" fill="#a4312c">Débito Sim.: R$ 185,4 mil</text>
+
+        <line x1="252" y1="164" x2="188" y2="212" stroke="#1f3347" stroke-width="1.5" marker-end="url(#arr)"/>
+        <ellipse cx="136" cy="236" rx="92" ry="30" fill="#fff" stroke="#1f3347" stroke-width="1.5"/>
+        <text x="136" y="233" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1d232b">Horizon S/A (Fictícia)</text>
+        <text x="136" y="247" text-anchor="middle" font-size="9" fill="#5d6672">Débito Sim.: R$ 14,2 mil</text>
+
+        <line x1="428" y1="132" x2="492" y2="88" stroke="#1f3347" stroke-width="1.5" marker-end="url(#arr)"/>
+        <ellipse cx="544" cy="66" rx="92" ry="30" fill="#fff" stroke="#1f3347" stroke-width="1.5"/>
+        <text x="544" y="63" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1d232b">Meridian Ltd (Fictícia)</text>
+        <text x="544" y="77" text-anchor="middle" font-size="9" fill="#5d6672">Endereço Sim.: Rua das Acácias</text>
+
+        <line x1="428" y1="164" x2="492" y2="212" stroke="#9a6a12" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+        <ellipse cx="544" cy="236" rx="92" ry="30" fill="#f7efdc" stroke="#9a6a12" stroke-width="1.5"/>
+        <text x="544" y="233" text-anchor="middle" font-size="10.5" font-weight="700" fill="#9a6a12">Rafael Mendes Pereira</text>
+        <text x="544" y="247" text-anchor="middle" font-size="9" fill="#9a6a12">Representante / Sócio Sim.</text>
+
+        <path d="M452 246 Q340 288 224 94" fill="none" stroke="#9a6a12" stroke-dasharray="3 3"/>
+      </svg>
+      <div class="cap">Figura 1 (Fictícia). Exemplo visual de mapa de vínculos societários e de representação.</div>
+    </div>
+
+    <table class="t">
+      <tr>
+        <th style="width:24%">Entidade / Vínculo</th>
+        <th style="width:54%">Elementos Simulados</th>
+        <th style="width:22%">Score</th>
+      </tr>
+      <tr>
+        <td><b>Meridian Global Holdings Ltd</b></td>
+        <td>Entidade estrangeira fictícia associada ao alvo demonstrativo, com endereço simulado na Rua das Acácias, 120 — Cidade Modelo/UF.</td>
+        <td><span class="badge b-ok">Fato Confirmado</span></td>
+      </tr>
+      <tr>
+        <td><b>Rafael Mendes Pereira</b></td>
+        <td>Figura fictícia de representação comercial e possível parentesco/sociedade no cenário de exemplo, pendente de documento formal.</td>
+        <td><span class="badge b-ind">Indício</span></td>
+      </tr>
+      <tr>
+        <td><b>Escritório Contábil Simulado</b></td>
+        <td>Endereço eletrônico fictício <code>atendimento@contabilidade-exemplo.com.br</code> associado ao cadastro demonstrativo.</td>
+        <td><span class="badge b-ok">Fato Confirmado</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="ft">
+    <span>Relatório Fictício · Modelo de Apresentação</span>
+    <span>Pág. 3 de 6</span>
+  </div>
+</section>
+
+<!-- PÁGINA 4 -->
+<section class="page">
+  <div class="wm">RELATÓRIO FICTÍCIO · REF. MOD-SF-001 · PRODUZIDO POR SIGILO FORENSE</div>
+  <div class="hd">
+    <span>Relatório Fictício · Modelo de Apresentação</span>
+    <span>Seção 3</span>
+  </div>
+
+  <div class="s">
+    <h2>3. Infraestrutura Digital e Presença em Redes (Dados Simulados)</h2>
+    <p>Demonstração da linha do tempo de um domínio fictício (<code>vertice-exemplo.com</code>), subdomínios simulados e perfil social ilustrativo.</p>
+
+    <table class="t">
+      <tr>
+        <th style="width:24%">Ativo Digital</th>
+        <th style="width:54%">Situação Simulada no Modelo</th>
+        <th style="width:22%">Score</th>
+      </tr>
+      <tr>
+        <td><b>Domínio <code>vertice-exemplo.com</code></b></td>
+        <td>Domínio fictício demonstrado como inativo e sem resolução ativa no momento da simulação.</td>
+        <td><span class="badge b-inc">Inconsistência</span></td>
+      </tr>
+      <tr>
+        <td><b>Subdomínios e Hospedagem</b></td>
+        <td>Exemplo ilustrativo com subdomínios simulados (<code>portal.vertice-exemplo.com</code>, <code>api.vertice-exemplo.com</code>, <code>painel.vertice-exemplo.com</code>) e histórico de provedores fictícios.</td>
+        <td><span class="badge b-ok">Fato Confirmado</span></td>
+      </tr>
+      <tr>
+        <td><b>E-mail Institucional Simulado</b></td>
+        <td>Endereço fictício <code>contato@vertice-exemplo.com</code> vinculado à ficha demonstrativa.</td>
+        <td><span class="badge b-ok">Fato Confirmado</span></td>
+      </tr>
+      <tr>
+        <td><b>Perfil Social Ilustrativo</b></td>
+        <td>Conta fictícia <code>@vertice_exemplo_oficial</code> exibindo link para o domínio simulado fora do ar.</td>
+        <td><span class="badge b-ok">Fato Confirmado</span></td>
+      </tr>
+      <tr>
+        <td><b>Contas Pessoais Secundárias</b></td>
+        <td>Busca ilustrativa sem correspondência confirmada no cenário de demonstração.</td>
+        <td><span class="badge b-nl">Não Localizado</span></td>
+      </tr>
+    </table>
+
+    <h3>Linha do Tempo Ilustrativa (<code>vertice-exemplo.com</code>)</h3>
+    <ol class="tl">
+      <li><b>JAN/2020 – JUN/2020</b>Registro e ativação inicial fictícia do domínio em infraestrutura ilustrativa.</li>
+      <li><b>JUL/2021 – DEZ/2022</b>Expansão simulada de subdomínios de aplicação e API em ambiente de nuvem.</li>
+      <li class="x"><b>AGO/2024</b>Interrupção simulada da hospedagem original e migração para página de estacionamento.</li>
+      <li class="x"><b>NOV/2026</b>Domínio sem resolução ativa no cenário modelo, mantendo-se referência em perfil social ilustrativo.</li>
+    </ol>
+
+    <div class="alert">
+      <b>Nota Ilustrativa do Modelo:</b> Este bloco demonstra como divergências entre canais ativos e infraestrutura inativa são apontadas de forma objetiva.
+    </div>
+  </div>
+
+  <div class="ft">
+    <span>Relatório Fictício · Modelo de Apresentação</span>
+    <span>Pág. 4 de 6</span>
+  </div>
+</section>
+
+<!-- PÁGINA 5 -->
+<section class="page">
+  <div class="wm">RELATÓRIO FICTÍCIO · REF. MOD-SF-001 · PRODUZIDO POR SIGILO FORENSE</div>
+  <div class="hd">
+    <span>Relatório Fictício · Modelo de Apresentação</span>
+    <span>Seção 4</span>
+  </div>
+
+  <div class="s">
+    <h2>4. Matriz de Registros Simulados</h2>
+    <p>Relação exemplificativa de registros que compõem a trilha de conferência em um relatório padrão.</p>
+
+    <table class="ev">
+      <tr><td>Registro I</td><td>Ficha processual simulada nº 0000000-00.2026.4.00.0000 (valor ilustrativo de R$ 1.250.000,00).</td></tr>
+      <tr><td>Registro II</td><td>Consulta fiscal simulada — CNPJ fictício 00.111.222/0001-33 (R$ 185.400,00).</td></tr>
+      <tr><td>Registro III</td><td>Consulta fiscal simulada — CNPJ fictício 00.444.555/0001-66 (R$ 14.250,00).</td></tr>
+      <tr><td>Registro IV</td><td>Cadastro societário simulado da Meridian Global Holdings Ltd (Rua das Acácias, 120, Cidade Modelo/UF).</td></tr>
+      <tr><td>Registro V</td><td>E-mails fictícios <code>contato@vertice-exemplo.com</code> e <code>atendimento@contabilidade-exemplo.com.br</code>.</td></tr>
+      <tr><td>Registro VI</td><td>Histórico simulado de resolução e subdomínios de <code>vertice-exemplo.com</code>.</td></tr>
+      <tr><td>Registro VII</td><td>Captura ilustrativa do perfil fictício <code>@vertice_exemplo_oficial</code>.</td></tr>
+    </table>
+  </div>
+
+  <div class="ft">
+    <span>Relatório Fictício · Modelo de Apresentação</span>
+    <span>Pág. 5 de 6</span>
+  </div>
+</section>
+
+<!-- PÁGINA 6 -->
+<section class="page">
+  <div class="wm">RELATÓRIO FICTÍCIO · REF. MOD-SF-001 · PRODUZIDO POR SIGILO FORENSE</div>
+  <div class="hd">
+    <span>Relatório Fictício · Modelo de Apresentação</span>
+    <span>Seção 5</span>
+  </div>
+
+  <div class="s">
+    <h2>5. Parecer da Revisão Interna e Encerramento do Modelo</h2>
+    <div class="rev">
+      <b class="rt">Auditoria de Fundamento · Tarefa Revisor (Exemplo)</b>
+      <p style="margin-bottom:6px">Demonstração de como a revisão interna valida cada ponto antes do fechamento:</p>
+      <ul>
+        <li><b>Pontos fechados no exemplo:</b> Registros com lastro direto e convergente recebem classificação de fato confirmado ou inconsistência conforme o estado apurado.</li>
+        <li><b>Pontos pendentes de aprofundamento no exemplo:</b> Vínculos apenas inferidos (como parentesco ou bens em outra praça) permanecem como indício até validação documental formal.</li>
+      </ul>
+    </div>
+
+    <div class="note">
+      <b>Observação de Apresentação:</b> Todos os nomes, CPFs, CNPJs, endereços, processos, domínios e valores financeiros deste documento são fictícios e servem exclusivamente como modelo de apresentação.
+    </div>
+
+    <div class="sig">
+      <b class="nome">Rodrigo Wemmer</b>
+      <span class="cargo">Sigilo Forense · Inteligência Investigativa</span>
+      Relatório Fictício · Referência MOD-SF-001 · 25 de novembro de 2026
+    </div>
+    <div class="legal">
+      Documento meramente ilustrativo (Relatório Fictício) elaborado para demonstração de formato, classificação por score e revisão analítica. Não representa pessoa real, empresa real ou caso concreto.
+    </div>
+  </div>
+
+  <div class="ft">
+    <span>Relatório Fictício · Modelo de Apresentação</span>
+    <span>Pág. 6 de 6</span>
+  </div>
+</section>
+
+</body>
+</html>
